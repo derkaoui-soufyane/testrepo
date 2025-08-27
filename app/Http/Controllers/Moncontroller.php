@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class Moncontroller extends Controller
 {
     public function index(){
-        $voiture = Voiture::all();
+        $voiture = voiture::all();
         return view("index", ["table" => $voiture]);
     }
 
